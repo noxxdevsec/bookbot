@@ -15,8 +15,10 @@ def count_num_of_characters(text):
 
     return total_characters
 
+def create_sorted_list(unsorted_dict):
+    sorted_list = []
 
+    for key,value in unsorted_dict.items():
+        sorted_list.append({"char":key,"num":value})
     
-
-
-    
+    return sorted_list

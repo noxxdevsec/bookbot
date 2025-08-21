@@ -1,5 +1,6 @@
 from stats import count_num_of_words
 from stats import count_num_of_characters
+from stats import create_sorted_list
 
 
 def get_book_text(path_to_file):
@@ -14,9 +15,10 @@ def main():
     num_words = count_num_of_words(book_text)
     num_characters = count_num_of_characters(book_text)
 
-    print(f"{num_words} words found in the document ")
-    print(num_characters)
-
+    # print(f"{num_words} words found in the document ")
+    # print(num_characters)
+    sorted_list = create_sorted_list(num_characters)
+    print(sorted_list)
 
 main()
 
