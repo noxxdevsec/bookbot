@@ -20,5 +20,9 @@ def create_sorted_list(unsorted_dict):
 
     for key,value in unsorted_dict.items():
         sorted_list.append({"char":key,"num":value})
+
+    sorted_list.sort(reverse=True, key=lambda item: item["num"])   
     
     return sorted_list
+
+
